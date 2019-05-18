@@ -1,4 +1,9 @@
 # AdaRF
-Datasets used in AdaRF.
+Datasets and code used in AdaRF.
 
-It will take some time to upload all the datasets due to their big size (about 9GB). But we ensure that all datasets will be uploaded.
+## Dataset
+There are 5 datasets and each one contains a training data and test data. Some descriptions can be found at Table. 2 in the original paper. The detailed experimental settings are described in 'config.txt', where each line represents the config of an experiment.
+
+
+## Code
+
