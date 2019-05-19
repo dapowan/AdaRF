@@ -28,9 +28,9 @@ In the training data or test data, each folder represent a experiment. There are
 * z: the z-coordinate of the aperture point with the unit of m. DEFAULT: 0.
 * angle: INVALID.
 
-A, I, P and S comprose forms a mapping between the config and folder. For instance, ""
+A, I, P and S comprose forms a mapping between the config and folder. For instance, config "1118 1-5:50 45 50 8" maps to the folders from "181118-01-50-8" to "181118-05-50-8".
 
 ### Reconstruct tag location
 
-## Code
+## Code (update soon)
 
