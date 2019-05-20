@@ -2,73 +2,91 @@
 Datasets and code used in AdaRF.
 
 ## Dataset
-There are 5 datasets and each one contains a training data and test data. 
+There are 5 datasets and each one contains a training data and test data. The detailed description are:
 
+</style>
 <table class="tg">
   <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-dvpl"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
+    <th class="tg-c3ow" rowspan="2">Dataset</th>
+    <th class="tg-c3ow" colspan="5">Training Data</th>
+    <th class="tg-c3ow" colspan="5">Test Data</th>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-dvpl"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-c3ow">Experiment<br>Times</td>
+    <td class="tg-c3ow">Tag<br>Number</td>
+    <td class="tg-c3ow">Tag<br>Separation</td>
+    <td class="tg-c3ow">Frequency<br>Number</td>
+    <td class="tg-c3ow">Sample<br>Number</td>
+    <td class="tg-c3ow">Experiment<br>times</td>
+    <td class="tg-c3ow">Tag<br>Number</td>
+    <td class="tg-c3ow">Tag<br>Separation</td>
+    <td class="tg-c3ow">Frequency<br>Number</td>
+    <td class="tg-c3ow">Sample<br>Number</td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-dvpl"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-baqh">D1</td>
+    <td class="tg-baqh">250</td>
+    <td class="tg-baqh">5</td>
+    <td class="tg-baqh">20cm</td>
+    <td class="tg-baqh">1</td>
+    <td class="tg-baqh">1250</td>
+    <td class="tg-baqh">24</td>
+    <td class="tg-baqh">3</td>
+    <td class="tg-baqh">20cm</td>
+    <td class="tg-baqh">8</td>
+    <td class="tg-baqh">72</td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-dvpl"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-c3ow">D2</td>
+    <td class="tg-c3ow">40</td>
+    <td class="tg-c3ow">6</td>
+    <td class="tg-c3ow">8cm</td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">240</td>
+    <td class="tg-c3ow">16</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">8cm</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">108</td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-dvpl"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td class="tg-c3ow">D3</td>
+    <td class="tg-c3ow">96</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">4-1cm</td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">768</td>
+    <td class="tg-c3ow">16</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">4-10cm</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">108</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">D4</td>
+    <td class="tg-c3ow">40</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">8cm</td>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">320</td>
+    <td class="tg-c3ow">9</td>
+    <td class="tg-c3ow">10</td>
+    <td class="tg-c3ow">8cm</td>
+    <td class="tg-c3ow">8</td>
+    <td class="tg-c3ow">90</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">D5</td>
+    <td class="tg-baqh">20</td>
+    <td class="tg-baqh">11</td>
+    <td class="tg-baqh">4cm</td>
+    <td class="tg-baqh">1</td>
+    <td class="tg-baqh">220</td>
+    <td class="tg-baqh">4</td>
+    <td class="tg-baqh">200</td>
+    <td class="tg-baqh">4cm</td>
+    <td class="tg-baqh">8</td>
+    <td class="tg-baqh">80</td>
   </tr>
 </table>
 
