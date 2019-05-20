@@ -100,7 +100,7 @@ There are 5 datasets and each one contains a training data and test data. The de
   </tr>
 </table>
 
-### Extract signal profile (update soon)
+### Extract signal profile
 In the training data or test data, each folder represent an experiment. There are 50 CSV files in an experiment and each file represent the signal profile collected at an aperture point. In the each CSV file, it consists of the following information:
 * EPC: the unique ID of an RFID tag. 24 digits.
 * antennaindex: the index of antenna. DEFAULT: 1.
