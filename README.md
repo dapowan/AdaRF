@@ -4,12 +4,6 @@ Datasets and code used in AdaRF.
 ## Dataset
 There are 5 datasets and each one contains a training data and test data. The detailed description are:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
-.tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}
-</style>
 <table class="tg">
   <tr>
     <th class="tg-8jgo" colspan="2">Dataset</th>
