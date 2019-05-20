@@ -4,89 +4,105 @@ Datasets and code used in AdaRF.
 ## Dataset
 There are 5 datasets and each one contains a training data and test data. The detailed description are:
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-c3ow" rowspan="2">Dataset</th>
-    <th class="tg-c3ow" colspan="5">Training Data</th>
-    <th class="tg-c3ow" colspan="5">Test Data</th>
+    <th class="tg-8jgo" colspan="2">Dataset</th>
+    <th class="tg-8jgo">Experiment<br>Times</th>
+    <th class="tg-8jgo">Tag<br>Number</th>
+    <th class="tg-8jgo">Tag<br>Separation</th>
+    <th class="tg-8jgo">Frequency<br>Number</th>
+    <th class="tg-8jgo">Sample<br>Number</th>
   </tr>
   <tr>
-    <td class="tg-c3ow">Experiment<br>Times</td>
-    <td class="tg-c3ow">Tag<br>Number</td>
-    <td class="tg-c3ow">Tag<br>Separation</td>
-    <td class="tg-c3ow">Frequency<br>Number</td>
-    <td class="tg-c3ow">Sample<br>Number</td>
-    <td class="tg-c3ow">Experiment<br>times</td>
-    <td class="tg-c3ow">Tag<br>Number</td>
-    <td class="tg-c3ow">Tag<br>Separation</td>
-    <td class="tg-c3ow">Frequency<br>Number</td>
-    <td class="tg-c3ow">Sample<br>Number</td>
+    <td class="tg-8jgo" rowspan="2">D1</td>
+    <td class="tg-8jgo">Train</td>
+    <td class="tg-8jgo">250</td>
+    <td class="tg-8jgo">5</td>
+    <td class="tg-8jgo">20cm</td>
+    <td class="tg-8jgo">1</td>
+    <td class="tg-8jgo">1250</td>
   </tr>
   <tr>
-    <td class="tg-baqh">D1</td>
-    <td class="tg-baqh">250</td>
-    <td class="tg-baqh">5</td>
-    <td class="tg-baqh">20cm</td>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">1250</td>
-    <td class="tg-baqh">24</td>
-    <td class="tg-baqh">3</td>
-    <td class="tg-baqh">20cm</td>
-    <td class="tg-baqh">8</td>
-    <td class="tg-baqh">72</td>
+    <td class="tg-8jgo">Test</td>
+    <td class="tg-8jgo">24</td>
+    <td class="tg-8jgo">3</td>
+    <td class="tg-8jgo">20cm</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">72</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">D2</td>
-    <td class="tg-c3ow">40</td>
-    <td class="tg-c3ow">6</td>
-    <td class="tg-c3ow">8cm</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">240</td>
-    <td class="tg-c3ow">16</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">8cm</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">108</td>
+    <td class="tg-8jgo" rowspan="2">D2</td>
+    <td class="tg-8jgo">Train</td>
+    <td class="tg-8jgo">40</td>
+    <td class="tg-8jgo">6</td>
+    <td class="tg-8jgo">8cm</td>
+    <td class="tg-8jgo">1</td>
+    <td class="tg-8jgo">240</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">D3</td>
-    <td class="tg-c3ow">96</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">4-1cm</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">768</td>
-    <td class="tg-c3ow">16</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">4-10cm</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">108</td>
+    <td class="tg-8jgo">Test</td>
+    <td class="tg-8jgo">16</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">8cm</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">108</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">D4</td>
-    <td class="tg-c3ow">40</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">8cm</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">320</td>
-    <td class="tg-c3ow">9</td>
-    <td class="tg-c3ow">10</td>
-    <td class="tg-c3ow">8cm</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">90</td>
+    <td class="tg-8jgo" rowspan="2">D3</td>
+    <td class="tg-8jgo">Train</td>
+    <td class="tg-8jgo">96</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">4-1cm</td>
+    <td class="tg-8jgo">1</td>
+    <td class="tg-8jgo">768</td>
   </tr>
   <tr>
-    <td class="tg-baqh">D5</td>
-    <td class="tg-baqh">20</td>
-    <td class="tg-baqh">11</td>
-    <td class="tg-baqh">4cm</td>
-    <td class="tg-baqh">1</td>
-    <td class="tg-baqh">220</td>
-    <td class="tg-baqh">4</td>
-    <td class="tg-baqh">200</td>
-    <td class="tg-baqh">4cm</td>
-    <td class="tg-baqh">8</td>
-    <td class="tg-baqh">80</td>
+    <td class="tg-8jgo">Test</td>
+    <td class="tg-8jgo">16</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">4-10cm</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">108</td>
+  </tr>
+  <tr>
+    <td class="tg-8jgo" rowspan="2">D4</td>
+    <td class="tg-8jgo">Train</td>
+    <td class="tg-8jgo">40</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">8cm</td>
+    <td class="tg-8jgo">1</td>
+    <td class="tg-8jgo">320</td>
+  </tr>
+  <tr>
+    <td class="tg-8jgo">Test</td>
+    <td class="tg-8jgo">9</td>
+    <td class="tg-8jgo">10</td>
+    <td class="tg-8jgo">8cm</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">90</td>
+  </tr>
+  <tr>
+    <td class="tg-8jgo" rowspan="2">D5</td>
+    <td class="tg-8jgo">Train</td>
+    <td class="tg-8jgo">20</td>
+    <td class="tg-8jgo">11</td>
+    <td class="tg-8jgo">4cm</td>
+    <td class="tg-8jgo">1</td>
+    <td class="tg-8jgo">220</td>
+  </tr>
+  <tr>
+    <td class="tg-8jgo">Test</td>
+    <td class="tg-8jgo">4</td>
+    <td class="tg-8jgo">200</td>
+    <td class="tg-8jgo">4cm</td>
+    <td class="tg-8jgo">8</td>
+    <td class="tg-8jgo">80</td>
   </tr>
 </table>
 
