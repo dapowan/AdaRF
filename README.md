@@ -133,7 +133,7 @@ In each experiment, antenna scans several RFID tags. All tags have the same y-co
 
 The corresponding function is available in the file named 'config.py'.
 
-### Map
+### Mapping
 
 A, I, P and S comprose a mapping between the config and folder. For instance, config "1218 1-5:50 45 50 8" maps to the folders from "181218-01-50-8" to "181218-05-50-8".
 
