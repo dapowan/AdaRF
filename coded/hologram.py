@@ -23,7 +23,12 @@ class Hologram:
             The second element defines the length of the grid along the x-axis.
             The first element defines the number of the grids along the y-axis.
             The first element defines the length of the grid along the y-axis.
-        :param phases: ndarray.
+        :param phases: 2-dimension ndarray. Phases collected at all aperture point under different frequency.
+            The first dimension represents the index of frequency.
+            The second dimension represents the index of aperture point.
+        :param xs: 2-dimension ndarray. The x-coordinates of all aperture points.
+            The first dimension represents the index of frequency.
+            The second dimension represents the index of aperture point.
         :return: ndarray.
         '''
     
