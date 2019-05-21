@@ -15,6 +15,18 @@ import matplotlib.pyplot as plt
 class Hologram:
 
     def __init__(self, paras, phases, xs, fres):
+         '''
+        init hologram according to the given setup.
+
+        :param paras: list with the size of 4. Set the surveillance plane of the hologram.
+            The first element defines the number of the grids along the x-axis.
+            The second element defines the length of the grid along the x-axis.
+            The first element defines the number of the grids along the y-axis.
+            The first element defines the length of the grid along the y-axis.
+        :param phases: ndarray.
+        :return: ndarray.
+        '''
+    
         self.num_x = paras[0]
         self.num_y = paras[1]
         self.step_x = paras[2]
