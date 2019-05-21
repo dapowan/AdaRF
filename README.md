@@ -137,5 +137,15 @@ The corresponding function is available in the file named 'config.py'.
 
 A, I, P and S comprose a mapping between the config and folder. For instance, config "1218 1-5:50 45 50 8" maps to the folders from "181218-01-50-8" to "181218-05-50-8".
 
-## Code  (update soon)
+## Code
+The critical functions in AdaRF, which are implemented by Python 3.6 and Tensorflow . 
 
+* config.py: Provide setups of all datasets including EPC, frequencies and other settings.
+* extract_signal_profile.py: Extract signal profiles (RSSI and phase) from CSV files for an experiment.
+* preprocess.py: Unwrap phase profiles of one tag and remove the profiles of aperture points which do not receive any its signals.
+* hologram.py: Create holograms inlcuding L1 and L2 in AdaRF, Tagoram and MobiTagbot.
+* reconstruct_tag_location.py: Read config items from 'config.txt' for all experiments and reconstruct actual locations of tags in an experiment.
+* other_scheme.py: The implementation of STPP and RF-Scanner.
+
+## Contact
+It is my first time to write public documents for my codes. So please contact me through email 735820057@qq.com if you have any problems or questions. I would be very glad to receive your emails.
