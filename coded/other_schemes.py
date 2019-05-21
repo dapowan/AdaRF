@@ -2,7 +2,7 @@
 @author: dapowan
 @file: other_schemes.py
 @time: 2019-5-20 20:52
-@desc:
+@desc: The implementations of RF-Scanner and STPP. Note that the implementations of Tagoram and MobiTagbot are in the 'hologram.py'.
 '''
 
 import numpy as np
@@ -12,6 +12,19 @@ con = 4 * np.pi / 299792458.0
 
 
 def rf_scanner(phases, xs, fres):
+     '''
+     Estimate tag position by the algorithm proposed in RF-Scanner.
+
+     :param phases: 2-dimension ndarray. Phases collected at all aperture point under different frequency.
+        The first dimension represents the index of frequency.
+        The second dimension represents the index of aperture point.
+     :param xs: 2-dimension ndarray. The x-coordinates of all aperture points.
+        The first dimension represents the index of frequency.
+        The second dimension represents the index of aperture point.
+     :param fres: list. list of adopted frequency.
+     
+     :return: list. The estimated coordinate of tag. (X, Y)
+    '''
     es = np.zeros((len(fres), 2))
     for f in range(len(fres)):
         cs = fres[f] * con
@@ -27,6 +40,22 @@ def rf_scanner(phases, xs, fres):
 
 
 def stpp(phases, xs, fres, aperture_spacing=0.02, ref_x=0.5, ref_y=0.5):
+    '''
+     Estimate tag position by the algorithm proposed in STPP.
+
+     :param phases: 2-dimension ndarray. Phases collected at all aperture point under different frequency.
+        The first dimension represents the index of frequency.
+        The second dimension represents the index of aperture point.
+     :param xs: 2-dimension ndarray. The x-coordinates of all aperture points.
+        The first dimension represents the index of frequency.
+        The second dimension represents the index of aperture point.
+     :param fres: list. list of adopted frequency.
+     :param aperture_spacing: float. The separation between adjacent aperture points.
+     :param ref_x: reference x-coordinate.
+     :param ref_y: reference y-coordinate.
+     
+     :return: list. The estimated coordinate of tag. (X, Y)
+    '''
     stpp_phase_ref, stpp_index_ref = __stpp_init(xs, fres, aperture_spacing=aperture_spacing,
                                                       ref_x=ref_x, ref_y=ref_y)
     results = []
@@ -107,9 +136,11 @@ def __stpp_init(xs, fres, aperture_spacing=0.02, ref_x=None, ref_y=None):
     '''
     Create reference phase profile.
 
-    :param xs: 2-dimensional ndarray. The x-coordinates of all aperture points.
+    :param xs: 2-dimension ndarray. The x-coordinates of all aperture points.
+        The first dimension represents the index of frequency.
+        The second dimension represents the index of aperture point.
     :param fres: list. list of adopted frequency.
-    :param aperture_spacing: the separation between adjacent aperture points.
+    :param aperture_spacing: float. The separation between adjacent aperture points.
     :param ref_x: reference x-coordinate.
     :param ref_y: reference y-coordinate.
     :return:
@@ -125,11 +156,17 @@ def __stpp_init(xs, fres, aperture_spacing=0.02, ref_x=None, ref_y=None):
 
 
 def __stpp_curve_fiting(phases, xs):
+    '''
+     Estimate tag position by the curve fitting.
+    '''
     po = np.polyfit(xs, phases, 2)
     return - po[1] / (2 * po[0])
 
 
 def __range_cut(number, min=0.0, max=1.0):
+    '''
+     Handle outilers and make sure estimated tag positions are in a specific range.
+    '''
     if number < min:
         return min
     elif number > max:
