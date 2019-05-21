@@ -138,7 +138,7 @@ The corresponding function is available in the file named 'config.py'.
 A, I, P and S comprose a mapping between the config and folder. For instance, config "1218 1-5:50 45 50 8" maps to the folders from "181218-01-50-8" to "181218-05-50-8".
 
 ## Code
-The critical functions in AdaRF, which are implemented by Python 3.6 and Tensorflow . The detailed documents of all functions can be found in the python files and here are breif discriptions of all files:
+The critical functions in AdaRF, which are implemented by Python 3.6 and Tensorflow . The detailed documents of all functions can be found in the corresponding python files and here are breif discriptions of all files:
 * config.py: Provide setups of all datasets including EPC, frequencies and other settings.
 * extract_signal_profile.py: Extract signal profiles (RSSI and phase) from CSV files for an experiment.
 * preprocess.py: Unwrap phase profiles of one tag and remove the profiles of aperture points which do not receive any its signals.
