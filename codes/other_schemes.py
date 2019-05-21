@@ -12,8 +12,8 @@ con = 4 * np.pi / 299792458.0
 
 
 def rf_scanner(phases, xs, fres):
-     '''
-     Estimate tag position by the algorithm proposed in RF-Scanner.
+    '''
+    Estimate tag position by the algorithm proposed in RF-Scanner.
 
      :param phases: 2-dimension ndarray. Phases collected at all aperture point under different frequency.
         The first dimension represents the index of frequency.
@@ -22,7 +22,7 @@ def rf_scanner(phases, xs, fres):
         The first dimension represents the index of frequency.
         The second dimension represents the index of aperture point.
      :param fres: list. list of adopted frequency.
-     
+
      :return: list. The estimated coordinate of tag. (X, Y)
     '''
     es = np.zeros((len(fres), 2))

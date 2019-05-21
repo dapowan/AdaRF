@@ -9,7 +9,7 @@ import os
 import numpy as np
 
 
-from coded.config import CONFIG_D1_TRAIN, CONFIG_D1_TEST
+from codes.config import CONFIG_D1_TRAIN, CONFIG_D1_TEST
 
 
 def extract_signal_profile(config, folder_experiment):
@@ -110,6 +110,6 @@ def merge_rssi_phase(tdata):
     return [np.around(np.mean(phase), 4), np.around(np.mean(RSSI), 4)]
 
 
-if __name__ == "__main__":
-    ep = '181218-01-50-8'
-    profile, xs = extract_signal_profile(CONFIG_D1_TEST,ep)
+# if __name__ == "__main__":
+#     ep = '181218-01-50-8'
+#     profile, xs = extract_signal_profile(CONFIG_D1_TEST,ep)

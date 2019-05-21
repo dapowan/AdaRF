@@ -13,11 +13,11 @@ def preprocess(phases, xs, epc=b''):
     unwrap phase profiles and remove outliers.
 
     :param phases: 2-dimension ndarray. Phases collected at all aperture point under different frequency.
-        The first one is the index of frequency.
-        The second one is the index of aperture point.
+        The first dimension is the index of frequency.
+        The second dimension is the index of aperture point.
     :param xs: 2-dimension ndarray. The x-coordinates of all aperture points.
-        The first one is the index of frequency.
-        The second one is the index of aperture point.
+        The first dimension is the index of frequency.
+        The second dimension is the index of aperture point.
     :param epc: bytes, the epc of phases and xs.
     :return:
     nphases: 2-dimension ndarray. Preprocessed phases.
