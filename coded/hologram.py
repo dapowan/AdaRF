@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 class Hologram:
 
     def __init__(self, paras, phases, xs, fres):
-         '''
+        '''
         init hologram according to the given setup.
 
         :param paras: list with the size of 4. Set the surveillance plane of the hologram.
@@ -29,7 +29,7 @@ class Hologram:
         :param xs: 2-dimension ndarray. The x-coordinates of all aperture points.
             The first dimension represents the index of frequency.
             The second dimension represents the index of aperture point.
-        :return: ndarray.
+        :param fres: list. list of adopted frequency.
         '''
     
         self.num_x = paras[0]
@@ -40,10 +40,15 @@ class Hologram:
         self.xs = xs
         self.fres = fres
         self.con = 4 * np.pi / 299792458.0
-        self.stpp_phase_ref = None
 
 
-    def holo_l1(self, gap = 1):
+    def holo_l1(self, gap = 1):      
+        '''
+        create the L1 hologram defined in AdaRF.
+
+        :param gap: differential parameter.
+        :return: ndarray with size of num_x * num_y. 
+        '''
         map = np.zeros((self.num_x, self.num_y))
         [rows, cols] = map.shape
         len_pos = self.xs.shape[1]
@@ -68,6 +73,12 @@ class Hologram:
 
 
     def holo_l2(self, gap = 1):
+        '''
+        create the L2 hologram defined in AdaRF.
+
+        :param gap: differential parameter.
+        :return: ndarray with size of num_x * num_y. 
+        '''
         map = np.zeros((self.num_x, self.num_y))
         len_pos = self.xs.shape[1]
         for r in range(self.num_x):
@@ -86,6 +97,11 @@ class Hologram:
         return map
 
     def holo_tagoram(self):
+        '''
+        create the DAH defined in Tagoram.
+        
+        :return: ndarray with size of num_x * num_y. 
+        '''
         nphases = self.phases.copy()
         for i in range(len(self.fres)):
             nphases[i, :] = self.phases[i, :] - self.phases[i, 0]
@@ -111,6 +127,12 @@ class Hologram:
 
 
     def holo_mobitagbot(self):
+        '''
+        create the hologram defined in MobiTagbot.
+        
+        :return: ndarray with size of num_x * num_y. 
+        '''
+        
         map = np.zeros((self.num_x, self.num_y))
         [rows, cols] = map.shape
         wk = np.ones(self.xs.shape[1])
