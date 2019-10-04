@@ -1,5 +1,5 @@
 # AdaRF
-Datasets and code used in AdaRF.
+Datasets and code used in AdaRF. The paper can be found in https://dl.acm.org/citation.cfm?doid=3361560.3351271.
 
 ## Dataset
 There are 5 datasets and each one contains a training data and test data. The detailed description are:
